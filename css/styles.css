@@ -532,7 +532,6 @@ body {
   }
   
   .form-title {
-    margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -872,7 +871,7 @@ body {
   justify-content: center;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) and (max-width: 1439px){
   .container{
     width: 768px;
     padding: 0 16px;
@@ -992,6 +991,142 @@ body {
   .footer-form{
     flex-direction: row;
   }
+}
+
+@media (min-width: 1440px){
+  .container{
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  .header-container .svg-cont{
+    display: none;
+  }
+
+  .header-menu{
+    display: flex;
+  }
+
+  .header-contacts-menu{
+    display: flex;
+  }
+
+  .section-hero{
+    height: auto;
+    max-width: 1440px;
+  }
+
+  .section-hero-title{
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin: 0 auto;
+  }
+
+  .section-about{
+    padding: 120px 0;
+  }
+  
+  .section-about-list{
+    flex-direction: row;
+    gap: 24px;
+    flex-basis: calc((100% - 72px) / 4);
+  }
+
+  .about-svg{
+    display: flex;
+  }
+
+  .section-about-list-item-title{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: unset;
+  }
+
+  .section-about-list-item-description{
+    font-weight: normal;
+  }
+
+  .section-team{
+    padding: 120px 0;
+  }
+
+  .section-team-list{
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .section-team-list-item{
+    width: calc((100% - 72px) / 4);
+  }
+
+  .section-portfolio{
+    padding: 120px 0;
+  }
+
+  .section-portfolio-list{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+  }
+
+  .section-portfolio-list-item{
+    width: calc((100% - 48px) / 3);
+  }
+
+  .footer{
+    padding: 100px 0;
+  }
+
+  .footer-container{
+    flex-direction: row;
+    justify-content: unset;
+    align-items: unset;
+  }
+
+  .left-right{
+    display: flex;
+  }
+
+  .footer-left{
+    margin-right: 120px;
+  }
+
+  .footer-right-p{
+    text-align: unset;
+  }
+
+  .footer-right-menu{
+    margin: 0;
+    align-items: unset;
+  }
+
+  .footer-form-container{
+    margin-left: 80px;
+  }
+
+  .footer-form{
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .footer-logo{
+    justify-content: unset;
+  }
+
+  .form-title{
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  .modal{
+    width: 408px;
+    min-height: 584px;
+  }
+
+
 
 }
   
