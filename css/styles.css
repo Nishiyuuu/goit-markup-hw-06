@@ -30,6 +30,8 @@ body {
   
   img {
     display: block;
+    max-width: 100%;
+    height: auto;
   }
   
   h1,
@@ -167,13 +169,13 @@ body {
     display: flex;
     align-items: center;
     background-color: #2e2f42;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), image-set(url(../images/people-office.jpg) 1x, url(../images/people-office@2.jpg) 2x);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), image-set(url(../images/people-office-320.jpg) 1x, url(../images/people-office-320@2.jpg) 2x);
     max-width: 767px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0 auto;
-    height: 432px;
+    padding: 72px 0;
   }
   
   .hero-container {
@@ -230,7 +232,6 @@ body {
   .section-about-list li {
     flex-direction: column;
     align-items: center;
-    flex-basis: calc((100% - 72px) / 4);
   }
   
   .about-svg {
@@ -289,7 +290,6 @@ body {
   
   .section-team-list-item {
     background-color: #ffffff;
-    width: calc((100% - 24px) / 1);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -378,7 +378,6 @@ body {
   }
   
   .section-portfolio-list-item {
-    width: calc((100% - 24px) / 1);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
@@ -410,11 +409,6 @@ body {
   .section-portfolio-image {
     position: relative;
     overflow: hidden;
-  }
-  
-  .section-portfolio-list-item-image {
-    width: 360px;
-    height: 300px;
   }
   
   .portfolio {
@@ -456,6 +450,10 @@ body {
   .footer-left{
     margin-bottom: 72px;
   }
+  
+  .footer-right{
+    margin-bottom: 72px;
+  }
 
   .footer-right-p{
     font-weight: 500;
@@ -471,7 +469,7 @@ body {
     display: flex;
     align-items: center;
     gap: 16px;
-    margin-bottom: 72px;
+    justify-content: center;
   }
 
   .footer-right-menu-item{
@@ -545,6 +543,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    align-items: center;
   }
   
   .form-label {
@@ -552,7 +551,7 @@ body {
   }
   
   .form-input {
-    width: 264px;
+    width: 288px;
     height: 40px;
     border: 1px solid #ffffff;
     background-color: transparent;
@@ -571,7 +570,7 @@ body {
   }
   
   .form-button {
-    min-width: 165px;
+    width: 165px;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -819,7 +818,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: center;
     width: 100%;
     height: 100%;
   }
@@ -871,7 +869,7 @@ body {
   justify-content: center;
 }
 
-@media (min-width: 768px) and (max-width: 1439px){
+@media (min-width: 768px) and (max-width: 1157px){
   .container{
     width: 768px;
     padding: 0 16px;
@@ -906,6 +904,8 @@ body {
     padding: 0;
     max-width: 1439px;
     height: 432px;
+    padding: 112px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), image-set(url(../images/people-office-768.jpg) 1x, url(../images/people-office-768@2.jpg) 2x);
   }
 
   .section-hero-title{
@@ -929,6 +929,10 @@ body {
     text-align: start;
   }
 
+  .team-container{
+    width: 584px;
+  }
+
   .section-team-list{
     flex-direction: row;
     flex-wrap: wrap;
@@ -937,7 +941,7 @@ body {
   }
 
   .section-team-list-item{
-    flex-basis: calc((100% - 48px) / 3);
+    flex-basis: calc((100% - 24px) / 2);
   }
 
   .section-portfolio-list{
@@ -952,11 +956,11 @@ body {
   
   .footer-container{
     align-items: start;
-    padding-left: 108px;
+    gap: 72px;
+    width: 584px;
   }
   
   .footer-left{
-    margin: 0;
     margin-right: 24px;
   }
 
@@ -975,7 +979,6 @@ body {
 
   .left-right{
     display: flex;
-    margin-bottom: 72px;
   }
 
   .footer-form-container{
@@ -993,7 +996,7 @@ body {
   }
 }
 
-@media (min-width: 1440px){
+@media (min-width: 1158px){
   .container{
     width: 1158px;
     padding: 0 15px;
@@ -1015,6 +1018,8 @@ body {
   .section-hero{
     height: auto;
     max-width: 1440px;
+    padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), image-set(url(../images/people-office-1440.jpg) 1x, url(../images/people-office-1440@2.jpg) 2x);
   }
 
   .section-hero-title{
@@ -1091,7 +1096,7 @@ body {
   }
 
   .footer-left{
-    margin-right: 120px;
+    margin-bottom: 0;
   }
 
   .footer-right-p{
